@@ -13,13 +13,16 @@ This assignment is accomplished by **C++**, heavily based on **Eigen**. The main
 TAs provide a simple starter code skeleton including basic GUI functionality and particle drawing, but I changed them for my convenience.
 
 ## Demos: check them in /mp4_media
-* FreeFall
+
+### click pictures to see live demos
+
+### FreeFall
 
 Boids are initiated at random positions and have zero velocity. Then they fall because of gravity.
 
 [![freefall](https://user-images.githubusercontent.com/39910677/114882364-2bfd2400-9e04-11eb-8b79-ce679c9bf399.png)](https://user-images.githubusercontent.com/39910677/114882455-41724e00-9e04-11eb-8146-02ae178e1fd2.mp4)
 
-* Circular Motion
+### Circular Motion
 
 Boids are rotating w.r.t. the origin. In this case, you can test the difference between three time integration algorithms. (By change *updateMode* in *boids.h*.)
 
@@ -28,42 +31,42 @@ Boids are rotating w.r.t. the origin. In this case, you can test the difference 
 [![circular](https://user-images.githubusercontent.com/39910677/114882683-7b435480-9e04-11eb-9c75-c4a7863ddeb8.png)](
 https://user-images.githubusercontent.com/39910677/114882714-8302f900-9e04-11eb-933d-66796b4ea082.mp4)
 
-* Cohesion
+### Cohesion
 
 Birds have the tendency to stay close to their neighbors. (Position Control)
 
 [![cohesion](https://user-images.githubusercontent.com/39910677/114882853-ab8af300-9e04-11eb-8562-155ae65a3b7a.png)](
 https://user-images.githubusercontent.com/39910677/114882893-b47bc480-9e04-11eb-9b95-9bb969c31ccb.mp4)
 
-* Alignment
+### Alignment
 
 In addition to moving toward the average position of neighboring birds, each bird now also wants to match the average direction of the others. (Velocity Control)
 
 [![alignment](https://user-images.githubusercontent.com/39910677/114883078-decd8200-9e04-11eb-80f4-0729224419a1.png)](
 https://user-images.githubusercontent.com/39910677/114883136-eab94400-9e04-11eb-9cc5-6f4889429ed8.mp4)
 
-* Separation
+### Separation
 
 When birds come too close to each other, they separate such as to avoid collisions. Add repulsive forces that avoid overcrowding.
 
 [![separation](https://user-images.githubusercontent.com/39910677/114883230-03295e80-9e05-11eb-86b8-f54fa3a969cf.png)](
 https://user-images.githubusercontent.com/39910677/114883253-0886a900-9e05-11eb-8603-77db2370e674.mp4)
 
-* Collision Avoidance
+### Collision Avoidance
 
 Implement a collision avoidance strategy where birds should steer around a given circular obstacle.
 
 [![coll](https://user-images.githubusercontent.com/39910677/114883400-2e13b280-9e05-11eb-9bb3-f8601d88f8f0.png)](
 https://user-images.githubusercontent.com/39910677/114883432-34a22a00-9e05-11eb-81c4-2709ccd45f8a.mp4)
 
-* Leading
+### Leading
 
 One blue bird is designated as the leader whose motion the remaining red birds should follow. 
 
 [![leading](https://user-images.githubusercontent.com/39910677/114883538-4edc0800-9e05-11eb-82eb-3cc62458e0a5.png)](
 https://user-images.githubusercontent.com/39910677/114883583-5a2f3380-9e05-11eb-9d4f-988a9836c2f6.mp4)
 
-* Collaborative & Adversarial
+### Collaborative & Adversarial
 
  ***Assumptions:***
 
@@ -81,21 +84,21 @@ As you can see, the numbers of two boids have logistic growth. Same initial cond
 
 But what if you apply control strategies to the red boids? Can they win the death match?
  
- ***Strategy 1: Seize the origin, quick attack and quick retreat***
+ ### ***Strategy 1: Seize the origin, quick attack and quick retreat***
  
 By quick attack, the red boids seize more habitat. By retreat, the red boids consolidate population superiority. Then they win the game.
 
 [![s1](https://user-images.githubusercontent.com/39910677/114884054-c01bbb00-9e05-11eb-9b74-96103b2a4053.png)](
 https://user-images.githubusercontent.com/39910677/114884134-cf9b0400-9e05-11eb-9856-1fb4364de257.mp4)
 
- ***Strategy 2: Take advantage of local majority***
+### ***Strategy 2: Take advantage of local majority***
  
 By Lanchester's N-square law of war, the red boid should attack the border of the blue bird group and take advantage of the local majority. In implementation, the red boids are chasing the rightest blue bird. The winning probability is around 80% ( win 16 times in 20 trials).
 
 [![s2](https://user-images.githubusercontent.com/39910677/114884277-f0635980-9e05-11eb-877b-6a73bf384ae8.png)](
 https://user-images.githubusercontent.com/39910677/114884394-06711a00-9e06-11eb-86f8-2662eba7f03f.mp4)
 
-***Strategy 3: Warriors and breeders***
+### ***Strategy 3: Warriors and breeders***
 
 Half of the red birds are male. They are stronger and more aggressive. They are warriors and attack the enemy. Half of the red birds are female. They are breeders, following the boids, breeding, and supporting the war. For warriors, they  won't go too deep into the enemy's boids. The code implementation is adapted from the *Collision Avoidance*.
 
