@@ -70,17 +70,20 @@ But what if you apply control strategies to the red boids? Can they win the deat
  ***Strategy 1: Seize the origin, quick attack and quick retreat***
  
  ![Strategy 1]()
+
 By quick attack, the red boids seize more habitat. By retreat, the red boids consolidate population superiority. Then they win the game.
 
  ***Strategy 2: Take advantage of local majority***
  
  ![Strategy 2]()
- By Lanchester's N-square law of war, the red boid should attack the border of the blue bird group and take advantage of the local majority. In implementation, the red boids are chasing the rightest blue bird. The winning probability is around 80% ( win 16 times in 20 trials).
+ 
+By Lanchester's N-square law of war, the red boid should attack the border of the blue bird group and take advantage of the local majority. In implementation, the red boids are chasing the rightest blue bird. The winning probability is around 80% ( win 16 times in 20 trials).
  
   ***Strategy 3: Warriors and breeders***
   
   ![Strategy 3]()
-  Half of the red birds are male. They are stronger and more aggressive. They are warriors and attack the enemy. Half of the red birds are female. They are breeders, following the boids, breeding, and supporting the war. For warriors, they  won't go too deep into the enemy's boids. The code implementation is adapted from the *Collision Avoidance*
+  
+Half of the red birds are male. They are stronger and more aggressive. They are warriors and attack the enemy. Half of the red birds are female. They are breeders, following the boids, breeding, and supporting the war. For warriors, they  won't go too deep into the enemy's boids. The code implementation is adapted from the *Collision Avoidance*
   
 ## How to get started
 
