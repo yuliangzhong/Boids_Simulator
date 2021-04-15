@@ -1,0 +1,2 @@
+/usr/bin/ar qc libboids.a CMakeFiles/boids.dir/boids.cpp.o
+/usr/bin/ranlib libboids.a
