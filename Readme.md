@@ -15,31 +15,39 @@ TAs provide a simple starter code skeleton including basic GUI functionality and
 ## Demos
 * FreeFall
 Boids are initiated at random positions and have zero velocity. Then they fall because of gravity.
+
 ![FreeFall]() 
 
 * Circular Motion
 Boids are rotating w.r.t. the origin. In this case, you can test the difference between three time integration algorithms. (By change *updateMode* in *boids.h*.)
+
 **All three integration schemes perform well when stepsize h is small (h=0.0005), but basic time integration and explicit midpoint diverge when the stepsize is big (h = 1). Midpoint diverges more slowly than basic integration. But symplectic euler method is still stable.**
+
 ![Circular Motion]()
 
 * Cohesion
 Birds have the tendency to stay close to their neighbors. (Position Control)
+
 ![Cohesion]()
 
 * Alignment
 In addition to moving toward the average position of neighboring birds, each bird now also wants to match the average direction of the others. (Velocity Control)
+
 ![Alignment]()
 
 * Separation
 When birds come too close to each other, they separate such as to avoid collisions. Add repulsive forces that avoid overcrowding.
+
 ![Separation]()
 
 * Collision Avoidance
 Implement a collision avoidance strategy where birds should steer around a given circular obstacle.
+
 ![Collision Avoidance]()
 
 * Leading
 One blue bird is designated as the leader whose motion the remaining red birds should follow. 
+
 ![Leading]()
 
 * Collaborative & Adversarial
@@ -52,6 +60,7 @@ One blue bird is designated as the leader whose motion the remaining red birds s
 * If three birds from the same group are close to a bird from the other group, the latter one is killed, i.e. removed from the system. (Attack)
 * The habitat is bounded and the resource is limitted.
 * If one bird is surrounded by six birds from the same group, and the distance between them is smaller than 60% of the separation distance, the bird is dead of hunger. (Avoid Overcrowded)
+
 ![CA]()
 
 As you can see, the numbers of two boids have logistic growth. Same initial conditions and same breed/attack rule, the fate of the two boids is random.
@@ -59,14 +68,17 @@ As you can see, the numbers of two boids have logistic growth. Same initial cond
 But what if you apply control strategies to the red boids? Can they win the death match?
  
  ***Strategy 1: Seize the origin, quick attack and quick retreat***
+ 
  ![Strategy 1]()
 By quick attack, the red boids seize more habitat. By retreat, the red boids consolidate population superiority. Then they win the game.
 
  ***Strategy 2: Take advantage of local majority***
+ 
  ![Strategy 2]()
  By Lanchester's N-square law of war, the red boid should attack the border of the blue bird group and take advantage of the local majority. In implementation, the red boids are chasing the rightest blue bird. The winning probability is around 80% ( win 16 times in 20 trials).
  
   ***Strategy 3: Warriors and breeders***
+  
   ![Strategy 3]()
   Half of the red birds are male. They are stronger and more aggressive. They are warriors and attack the enemy. Half of the red birds are female. They are breeders, following the boids, breeding, and supporting the war. For warriors, they  won't go too deep into the enemy's boids. The code implementation is adapted from the *Collision Avoidance*
   
