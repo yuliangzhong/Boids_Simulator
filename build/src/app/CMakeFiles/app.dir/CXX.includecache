@@ -38,9 +38,9 @@ iostream
 nanovg.h
 -
 
-/home/ubuntu/CMM/a3-yuliangzhong/src/app/main.cpp
+/home/ubuntu/test/Boids-Simulator/src/app/main.cpp
 application.h
-/home/ubuntu/CMM/a3-yuliangzhong/src/app/application.h
+/home/ubuntu/test/Boids-Simulator/src/app/application.h
 imgui.h
 -
 iostream
@@ -52,9 +52,9 @@ deque
 chrono
 -
 ../boids/boids.h
-/home/ubuntu/CMM/a3-yuliangzhong/src/boids/boids.h
+/home/ubuntu/test/Boids-Simulator/src/boids/boids.h
 
-/home/ubuntu/CMM/a3-yuliangzhong/src/boids/boids.h
+/home/ubuntu/test/Boids-Simulator/src/boids/boids.h
 Eigen/Core
 -
 Eigen/QR

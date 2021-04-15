@@ -20,7 +20,7 @@ windows.h
 KHR/khrplatform.h
 -
 
-/home/ubuntu/CMM/a3-yuliangzhong/ext/glad/src/glad.c
+/home/ubuntu/test/Boids-Simulator/ext/glad/src/glad.c
 stdio.h
 -
 stdlib.h

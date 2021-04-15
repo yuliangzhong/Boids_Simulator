@@ -4,11 +4,11 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/ubuntu/CMM/a3-yuliangzhong/build/_deps/imgui-src/imgui.cpp" "/home/ubuntu/CMM/a3-yuliangzhong/build/ext/CMakeFiles/imgui.dir/__/_deps/imgui-src/imgui.cpp.o"
-  "/home/ubuntu/CMM/a3-yuliangzhong/build/_deps/imgui-src/imgui_demo.cpp" "/home/ubuntu/CMM/a3-yuliangzhong/build/ext/CMakeFiles/imgui.dir/__/_deps/imgui-src/imgui_demo.cpp.o"
-  "/home/ubuntu/CMM/a3-yuliangzhong/build/_deps/imgui-src/imgui_draw.cpp" "/home/ubuntu/CMM/a3-yuliangzhong/build/ext/CMakeFiles/imgui.dir/__/_deps/imgui-src/imgui_draw.cpp.o"
-  "/home/ubuntu/CMM/a3-yuliangzhong/build/_deps/imgui-src/imgui_tables.cpp" "/home/ubuntu/CMM/a3-yuliangzhong/build/ext/CMakeFiles/imgui.dir/__/_deps/imgui-src/imgui_tables.cpp.o"
-  "/home/ubuntu/CMM/a3-yuliangzhong/build/_deps/imgui-src/imgui_widgets.cpp" "/home/ubuntu/CMM/a3-yuliangzhong/build/ext/CMakeFiles/imgui.dir/__/_deps/imgui-src/imgui_widgets.cpp.o"
+  "/home/ubuntu/test/Boids-Simulator/build/_deps/imgui-src/imgui.cpp" "/home/ubuntu/test/Boids-Simulator/build/ext/CMakeFiles/imgui.dir/__/_deps/imgui-src/imgui.cpp.o"
+  "/home/ubuntu/test/Boids-Simulator/build/_deps/imgui-src/imgui_demo.cpp" "/home/ubuntu/test/Boids-Simulator/build/ext/CMakeFiles/imgui.dir/__/_deps/imgui-src/imgui_demo.cpp.o"
+  "/home/ubuntu/test/Boids-Simulator/build/_deps/imgui-src/imgui_draw.cpp" "/home/ubuntu/test/Boids-Simulator/build/ext/CMakeFiles/imgui.dir/__/_deps/imgui-src/imgui_draw.cpp.o"
+  "/home/ubuntu/test/Boids-Simulator/build/_deps/imgui-src/imgui_tables.cpp" "/home/ubuntu/test/Boids-Simulator/build/ext/CMakeFiles/imgui.dir/__/_deps/imgui-src/imgui_tables.cpp.o"
+  "/home/ubuntu/test/Boids-Simulator/build/_deps/imgui-src/imgui_widgets.cpp" "/home/ubuntu/test/Boids-Simulator/build/ext/CMakeFiles/imgui.dir/__/_deps/imgui-src/imgui_widgets.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

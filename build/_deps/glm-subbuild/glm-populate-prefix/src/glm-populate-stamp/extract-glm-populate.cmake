@@ -1,7 +1,7 @@
 # Make file names absolute:
 #
-get_filename_component(filename "/home/ubuntu/CMM/a3-yuliangzhong/build/_deps/glm-subbuild/glm-populate-prefix/src/glm-0.9.9.7.zip" ABSOLUTE)
-get_filename_component(directory "/home/ubuntu/CMM/a3-yuliangzhong/build/_deps/glm-src" ABSOLUTE)
+get_filename_component(filename "/home/ubuntu/test/Boids-Simulator/build/_deps/glm-subbuild/glm-populate-prefix/src/glm-0.9.9.7.zip" ABSOLUTE)
+get_filename_component(directory "/home/ubuntu/test/Boids-Simulator/build/_deps/glm-src" ABSOLUTE)
 
 message(STATUS "extracting...
      src='${filename}'

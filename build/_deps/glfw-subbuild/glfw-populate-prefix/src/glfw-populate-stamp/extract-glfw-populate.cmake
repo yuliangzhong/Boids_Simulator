@@ -1,7 +1,7 @@
 # Make file names absolute:
 #
-get_filename_component(filename "/home/ubuntu/CMM/a3-yuliangzhong/build/_deps/glfw-subbuild/glfw-populate-prefix/src/3.3.2.zip" ABSOLUTE)
-get_filename_component(directory "/home/ubuntu/CMM/a3-yuliangzhong/build/_deps/glfw-src" ABSOLUTE)
+get_filename_component(filename "/home/ubuntu/test/Boids-Simulator/build/_deps/glfw-subbuild/glfw-populate-prefix/src/3.3.2.zip" ABSOLUTE)
+get_filename_component(directory "/home/ubuntu/test/Boids-Simulator/build/_deps/glfw-src" ABSOLUTE)
 
 message(STATUS "extracting...
      src='${filename}'

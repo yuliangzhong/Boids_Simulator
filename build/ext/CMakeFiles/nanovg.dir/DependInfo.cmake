@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/ubuntu/CMM/a3-yuliangzhong/build/_deps/nanovg-src/src/nanovg.c" "/home/ubuntu/CMM/a3-yuliangzhong/build/ext/CMakeFiles/nanovg.dir/__/_deps/nanovg-src/src/nanovg.c.o"
+  "/home/ubuntu/test/Boids-Simulator/build/_deps/nanovg-src/src/nanovg.c" "/home/ubuntu/test/Boids-Simulator/build/ext/CMakeFiles/nanovg.dir/__/_deps/nanovg-src/src/nanovg.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

@@ -1,6 +1,6 @@
 # CMake generated Testfile for 
-# Source directory: /home/ubuntu/CMM/a3-yuliangzhong/ext/stb_image
-# Build directory: /home/ubuntu/CMM/a3-yuliangzhong/build/ext/stb_image
+# Source directory: /home/ubuntu/test/Boids-Simulator/ext/stb_image
+# Build directory: /home/ubuntu/test/Boids-Simulator/build/ext/stb_image
 # 
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.

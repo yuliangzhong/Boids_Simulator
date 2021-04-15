@@ -1,7 +1,7 @@
 # Make file names absolute:
 #
-get_filename_component(filename "/home/ubuntu/CMM/a3-yuliangzhong/build/_deps/imgui-subbuild/imgui-populate-prefix/src/v1.81.zip" ABSOLUTE)
-get_filename_component(directory "/home/ubuntu/CMM/a3-yuliangzhong/build/_deps/imgui-src" ABSOLUTE)
+get_filename_component(filename "/home/ubuntu/test/Boids-Simulator/build/_deps/imgui-subbuild/imgui-populate-prefix/src/v1.81.zip" ABSOLUTE)
+get_filename_component(directory "/home/ubuntu/test/Boids-Simulator/build/_deps/imgui-src" ABSOLUTE)
 
 message(STATUS "extracting...
      src='${filename}'

@@ -22,14 +22,14 @@ function(check_file_hash has_hash hash_is_good)
   set("${has_hash}" TRUE PARENT_SCOPE)
 
   message(STATUS "verifying file...
-       file='/home/ubuntu/CMM/a3-yuliangzhong/build/_deps/glm-subbuild/glm-populate-prefix/src/glm-0.9.9.7.zip'")
+       file='/home/ubuntu/test/Boids-Simulator/build/_deps/glm-subbuild/glm-populate-prefix/src/glm-0.9.9.7.zip'")
 
-  file("MD5" "/home/ubuntu/CMM/a3-yuliangzhong/build/_deps/glm-subbuild/glm-populate-prefix/src/glm-0.9.9.7.zip" actual_value)
+  file("MD5" "/home/ubuntu/test/Boids-Simulator/build/_deps/glm-subbuild/glm-populate-prefix/src/glm-0.9.9.7.zip" actual_value)
 
   if(NOT "${actual_value}" STREQUAL "da4740b5b41a1e2ccb2955af74e7c298")
     set("${hash_is_good}" FALSE PARENT_SCOPE)
     message(STATUS "MD5 hash of
-    /home/ubuntu/CMM/a3-yuliangzhong/build/_deps/glm-subbuild/glm-populate-prefix/src/glm-0.9.9.7.zip
+    /home/ubuntu/test/Boids-Simulator/build/_deps/glm-subbuild/glm-populate-prefix/src/glm-0.9.9.7.zip
   does not match expected value
     expected: 'da4740b5b41a1e2ccb2955af74e7c298'
       actual: '${actual_value}'")
@@ -71,7 +71,7 @@ function(sleep_before_download attempt)
   execute_process(COMMAND "${CMAKE_COMMAND}" -E sleep "${sleep_seconds}")
 endfunction()
 
-if("/home/ubuntu/CMM/a3-yuliangzhong/build/_deps/glm-subbuild/glm-populate-prefix/src/glm-0.9.9.7.zip" STREQUAL "")
+if("/home/ubuntu/test/Boids-Simulator/build/_deps/glm-subbuild/glm-populate-prefix/src/glm-0.9.9.7.zip" STREQUAL "")
   message(FATAL_ERROR "LOCAL can't be empty")
 endif()
 
@@ -79,32 +79,32 @@ if("https://github.com/g-truc/glm/releases/download/0.9.9.7/glm-0.9.9.7.zip" STR
   message(FATAL_ERROR "REMOTE can't be empty")
 endif()
 
-if(EXISTS "/home/ubuntu/CMM/a3-yuliangzhong/build/_deps/glm-subbuild/glm-populate-prefix/src/glm-0.9.9.7.zip")
+if(EXISTS "/home/ubuntu/test/Boids-Simulator/build/_deps/glm-subbuild/glm-populate-prefix/src/glm-0.9.9.7.zip")
   check_file_hash(has_hash hash_is_good)
   if(has_hash)
     if(hash_is_good)
       message(STATUS "File already exists and hash match (skip download):
-  file='/home/ubuntu/CMM/a3-yuliangzhong/build/_deps/glm-subbuild/glm-populate-prefix/src/glm-0.9.9.7.zip'
+  file='/home/ubuntu/test/Boids-Simulator/build/_deps/glm-subbuild/glm-populate-prefix/src/glm-0.9.9.7.zip'
   MD5='da4740b5b41a1e2ccb2955af74e7c298'"
       )
       return()
     else()
       message(STATUS "File already exists but hash mismatch. Removing...")
-      file(REMOVE "/home/ubuntu/CMM/a3-yuliangzhong/build/_deps/glm-subbuild/glm-populate-prefix/src/glm-0.9.9.7.zip")
+      file(REMOVE "/home/ubuntu/test/Boids-Simulator/build/_deps/glm-subbuild/glm-populate-prefix/src/glm-0.9.9.7.zip")
     endif()
   else()
     message(STATUS "File already exists but no hash specified (use URL_HASH):
-  file='/home/ubuntu/CMM/a3-yuliangzhong/build/_deps/glm-subbuild/glm-populate-prefix/src/glm-0.9.9.7.zip'
+  file='/home/ubuntu/test/Boids-Simulator/build/_deps/glm-subbuild/glm-populate-prefix/src/glm-0.9.9.7.zip'
 Old file will be removed and new file downloaded from URL."
     )
-    file(REMOVE "/home/ubuntu/CMM/a3-yuliangzhong/build/_deps/glm-subbuild/glm-populate-prefix/src/glm-0.9.9.7.zip")
+    file(REMOVE "/home/ubuntu/test/Boids-Simulator/build/_deps/glm-subbuild/glm-populate-prefix/src/glm-0.9.9.7.zip")
   endif()
 endif()
 
 set(retry_number 5)
 
 message(STATUS "Downloading...
-   dst='/home/ubuntu/CMM/a3-yuliangzhong/build/_deps/glm-subbuild/glm-populate-prefix/src/glm-0.9.9.7.zip'
+   dst='/home/ubuntu/test/Boids-Simulator/build/_deps/glm-subbuild/glm-populate-prefix/src/glm-0.9.9.7.zip'
    timeout='none'"
 )
 
@@ -121,7 +121,7 @@ foreach(i RANGE ${retry_number})
 
     file(
         DOWNLOAD
-        "${url}" "/home/ubuntu/CMM/a3-yuliangzhong/build/_deps/glm-subbuild/glm-populate-prefix/src/glm-0.9.9.7.zip"
+        "${url}" "/home/ubuntu/test/Boids-Simulator/build/_deps/glm-subbuild/glm-populate-prefix/src/glm-0.9.9.7.zip"
         SHOW_PROGRESS
         # no TIMEOUT
         STATUS status
@@ -137,7 +137,7 @@ foreach(i RANGE ${retry_number})
       check_file_hash(has_hash hash_is_good)
       if(has_hash AND NOT hash_is_good)
         message(STATUS "Hash mismatch, removing...")
-        file(REMOVE "/home/ubuntu/CMM/a3-yuliangzhong/build/_deps/glm-subbuild/glm-populate-prefix/src/glm-0.9.9.7.zip")
+        file(REMOVE "/home/ubuntu/test/Boids-Simulator/build/_deps/glm-subbuild/glm-populate-prefix/src/glm-0.9.9.7.zip")
       else()
         message(STATUS "Downloading... done")
         return()

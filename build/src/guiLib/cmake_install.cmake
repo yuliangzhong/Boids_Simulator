@@ -1,4 +1,4 @@
-# Install script for directory: /home/ubuntu/CMM/a3-yuliangzhong/src/guiLib
+# Install script for directory: /home/ubuntu/test/Boids-Simulator/src/guiLib
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

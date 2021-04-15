@@ -1,4 +1,4 @@
-# Install script for directory: /home/ubuntu/CMM/a3-yuliangzhong/build/_deps/glm-src
+# Install script for directory: /home/ubuntu/test/Boids-Simulator/build/_deps/glm-src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,7 +44,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/ubuntu/CMM/a3-yuliangzhong/build/ext/ext/glm/glm/cmake_install.cmake")
+  include("/home/ubuntu/test/Boids-Simulator/build/ext/ext/glm/glm/cmake_install.cmake")
 
 endif()
 

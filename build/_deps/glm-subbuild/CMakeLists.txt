@@ -12,8 +12,8 @@ project(glm-populate NONE)
 include(ExternalProject)
 ExternalProject_Add(glm-populate
                      "UPDATE_DISCONNECTED" "False" "URL" "https://github.com/g-truc/glm/releases/download/0.9.9.7/glm-0.9.9.7.zip" "URL_HASH" "MD5=da4740b5b41a1e2ccb2955af74e7c298"
-                    SOURCE_DIR          "/home/ubuntu/CMM/a3-yuliangzhong/build/_deps/glm-src"
-                    BINARY_DIR          "/home/ubuntu/CMM/a3-yuliangzhong/build/_deps/glm-build"
+                    SOURCE_DIR          "/home/ubuntu/test/Boids-Simulator/build/_deps/glm-src"
+                    BINARY_DIR          "/home/ubuntu/test/Boids-Simulator/build/_deps/glm-build"
                     CONFIGURE_COMMAND   ""
                     BUILD_COMMAND       ""
                     INSTALL_COMMAND     ""

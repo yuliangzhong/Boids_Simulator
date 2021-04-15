@@ -1,4 +1,4 @@
-# Install script for directory: /home/ubuntu/CMM/a3-yuliangzhong/build/_deps/glm-src/glm
+# Install script for directory: /home/ubuntu/test/Boids-Simulator/build/_deps/glm-src/glm
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

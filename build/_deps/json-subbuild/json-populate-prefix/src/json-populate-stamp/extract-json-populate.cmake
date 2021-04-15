@@ -1,7 +1,7 @@
 # Make file names absolute:
 #
-get_filename_component(filename "/home/ubuntu/CMM/a3-yuliangzhong/build/_deps/json-subbuild/json-populate-prefix/src/include.zip" ABSOLUTE)
-get_filename_component(directory "/home/ubuntu/CMM/a3-yuliangzhong/build/_deps/json-src" ABSOLUTE)
+get_filename_component(filename "/home/ubuntu/test/Boids-Simulator/build/_deps/json-subbuild/json-populate-prefix/src/include.zip" ABSOLUTE)
+get_filename_component(directory "/home/ubuntu/test/Boids-Simulator/build/_deps/json-src" ABSOLUTE)
 
 message(STATUS "extracting...
      src='${filename}'

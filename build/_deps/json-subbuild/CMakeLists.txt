@@ -12,8 +12,8 @@ project(json-populate NONE)
 include(ExternalProject)
 ExternalProject_Add(json-populate
                      "UPDATE_DISCONNECTED" "False" "URL" "https://github.com/nlohmann/json/releases/download/v3.9.1/include.zip" "URL_HASH" "MD5=d2f66c608af689e21d69a33c220e974e"
-                    SOURCE_DIR          "/home/ubuntu/CMM/a3-yuliangzhong/build/_deps/json-src"
-                    BINARY_DIR          "/home/ubuntu/CMM/a3-yuliangzhong/build/_deps/json-build"
+                    SOURCE_DIR          "/home/ubuntu/test/Boids-Simulator/build/_deps/json-src"
+                    BINARY_DIR          "/home/ubuntu/test/Boids-Simulator/build/_deps/json-build"
                     CONFIGURE_COMMAND   ""
                     BUILD_COMMAND       ""
                     INSTALL_COMMAND     ""

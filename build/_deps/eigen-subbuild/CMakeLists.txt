@@ -12,8 +12,8 @@ project(eigen-populate NONE)
 include(ExternalProject)
 ExternalProject_Add(eigen-populate
                      "UPDATE_DISCONNECTED" "False" "URL" "https://gitlab.com/libeigen/eigen/-/archive/3.3.7/eigen-3.3.7.zip" "URL_HASH" "MD5=888aab45512cc0c734b3e8f60280daba"
-                    SOURCE_DIR          "/home/ubuntu/CMM/a3-yuliangzhong/build/_deps/eigen-src"
-                    BINARY_DIR          "/home/ubuntu/CMM/a3-yuliangzhong/build/_deps/eigen-build"
+                    SOURCE_DIR          "/home/ubuntu/test/Boids-Simulator/build/_deps/eigen-src"
+                    BINARY_DIR          "/home/ubuntu/test/Boids-Simulator/build/_deps/eigen-build"
                     CONFIGURE_COMMAND   ""
                     BUILD_COMMAND       ""
                     INSTALL_COMMAND     ""

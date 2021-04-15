@@ -22,14 +22,14 @@ function(check_file_hash has_hash hash_is_good)
   set("${has_hash}" TRUE PARENT_SCOPE)
 
   message(STATUS "verifying file...
-       file='/home/ubuntu/CMM/a3-yuliangzhong/build/_deps/glfw-subbuild/glfw-populate-prefix/src/3.3.2.zip'")
+       file='/home/ubuntu/test/Boids-Simulator/build/_deps/glfw-subbuild/glfw-populate-prefix/src/3.3.2.zip'")
 
-  file("MD5" "/home/ubuntu/CMM/a3-yuliangzhong/build/_deps/glfw-subbuild/glfw-populate-prefix/src/3.3.2.zip" actual_value)
+  file("MD5" "/home/ubuntu/test/Boids-Simulator/build/_deps/glfw-subbuild/glfw-populate-prefix/src/3.3.2.zip" actual_value)
 
   if(NOT "${actual_value}" STREQUAL "69d0aa90a9278c0dd8be975d1ae4aaf2")
     set("${hash_is_good}" FALSE PARENT_SCOPE)
     message(STATUS "MD5 hash of
-    /home/ubuntu/CMM/a3-yuliangzhong/build/_deps/glfw-subbuild/glfw-populate-prefix/src/3.3.2.zip
+    /home/ubuntu/test/Boids-Simulator/build/_deps/glfw-subbuild/glfw-populate-prefix/src/3.3.2.zip
   does not match expected value
     expected: '69d0aa90a9278c0dd8be975d1ae4aaf2'
       actual: '${actual_value}'")
@@ -71,7 +71,7 @@ function(sleep_before_download attempt)
   execute_process(COMMAND "${CMAKE_COMMAND}" -E sleep "${sleep_seconds}")
 endfunction()
 
-if("/home/ubuntu/CMM/a3-yuliangzhong/build/_deps/glfw-subbuild/glfw-populate-prefix/src/3.3.2.zip" STREQUAL "")
+if("/home/ubuntu/test/Boids-Simulator/build/_deps/glfw-subbuild/glfw-populate-prefix/src/3.3.2.zip" STREQUAL "")
   message(FATAL_ERROR "LOCAL can't be empty")
 endif()
 
@@ -79,32 +79,32 @@ if("https://github.com/glfw/glfw/archive/3.3.2.zip" STREQUAL "")
   message(FATAL_ERROR "REMOTE can't be empty")
 endif()
 
-if(EXISTS "/home/ubuntu/CMM/a3-yuliangzhong/build/_deps/glfw-subbuild/glfw-populate-prefix/src/3.3.2.zip")
+if(EXISTS "/home/ubuntu/test/Boids-Simulator/build/_deps/glfw-subbuild/glfw-populate-prefix/src/3.3.2.zip")
   check_file_hash(has_hash hash_is_good)
   if(has_hash)
     if(hash_is_good)
       message(STATUS "File already exists and hash match (skip download):
-  file='/home/ubuntu/CMM/a3-yuliangzhong/build/_deps/glfw-subbuild/glfw-populate-prefix/src/3.3.2.zip'
+  file='/home/ubuntu/test/Boids-Simulator/build/_deps/glfw-subbuild/glfw-populate-prefix/src/3.3.2.zip'
   MD5='69d0aa90a9278c0dd8be975d1ae4aaf2'"
       )
       return()
     else()
       message(STATUS "File already exists but hash mismatch. Removing...")
-      file(REMOVE "/home/ubuntu/CMM/a3-yuliangzhong/build/_deps/glfw-subbuild/glfw-populate-prefix/src/3.3.2.zip")
+      file(REMOVE "/home/ubuntu/test/Boids-Simulator/build/_deps/glfw-subbuild/glfw-populate-prefix/src/3.3.2.zip")
     endif()
   else()
     message(STATUS "File already exists but no hash specified (use URL_HASH):
-  file='/home/ubuntu/CMM/a3-yuliangzhong/build/_deps/glfw-subbuild/glfw-populate-prefix/src/3.3.2.zip'
+  file='/home/ubuntu/test/Boids-Simulator/build/_deps/glfw-subbuild/glfw-populate-prefix/src/3.3.2.zip'
 Old file will be removed and new file downloaded from URL."
     )
-    file(REMOVE "/home/ubuntu/CMM/a3-yuliangzhong/build/_deps/glfw-subbuild/glfw-populate-prefix/src/3.3.2.zip")
+    file(REMOVE "/home/ubuntu/test/Boids-Simulator/build/_deps/glfw-subbuild/glfw-populate-prefix/src/3.3.2.zip")
   endif()
 endif()
 
 set(retry_number 5)
 
 message(STATUS "Downloading...
-   dst='/home/ubuntu/CMM/a3-yuliangzhong/build/_deps/glfw-subbuild/glfw-populate-prefix/src/3.3.2.zip'
+   dst='/home/ubuntu/test/Boids-Simulator/build/_deps/glfw-subbuild/glfw-populate-prefix/src/3.3.2.zip'
    timeout='none'"
 )
 
@@ -121,7 +121,7 @@ foreach(i RANGE ${retry_number})
 
     file(
         DOWNLOAD
-        "${url}" "/home/ubuntu/CMM/a3-yuliangzhong/build/_deps/glfw-subbuild/glfw-populate-prefix/src/3.3.2.zip"
+        "${url}" "/home/ubuntu/test/Boids-Simulator/build/_deps/glfw-subbuild/glfw-populate-prefix/src/3.3.2.zip"
         SHOW_PROGRESS
         # no TIMEOUT
         STATUS status
@@ -137,7 +137,7 @@ foreach(i RANGE ${retry_number})
       check_file_hash(has_hash hash_is_good)
       if(has_hash AND NOT hash_is_good)
         message(STATUS "Hash mismatch, removing...")
-        file(REMOVE "/home/ubuntu/CMM/a3-yuliangzhong/build/_deps/glfw-subbuild/glfw-populate-prefix/src/3.3.2.zip")
+        file(REMOVE "/home/ubuntu/test/Boids-Simulator/build/_deps/glfw-subbuild/glfw-populate-prefix/src/3.3.2.zip")
       else()
         message(STATUS "Downloading... done")
         return()

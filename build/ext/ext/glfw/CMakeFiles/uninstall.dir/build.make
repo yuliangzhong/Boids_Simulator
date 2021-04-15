@@ -62,10 +62,10 @@ RM = /usr/local/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ubuntu/CMM/a3-yuliangzhong
+CMAKE_SOURCE_DIR = /home/ubuntu/test/Boids-Simulator
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ubuntu/CMM/a3-yuliangzhong/build
+CMAKE_BINARY_DIR = /home/ubuntu/test/Boids-Simulator/build
 
 # Utility rule file for uninstall.
 
@@ -73,7 +73,7 @@ CMAKE_BINARY_DIR = /home/ubuntu/CMM/a3-yuliangzhong/build
 include ext/ext/glfw/CMakeFiles/uninstall.dir/progress.make
 
 ext/ext/glfw/CMakeFiles/uninstall:
-	cd /home/ubuntu/CMM/a3-yuliangzhong/build/ext/ext/glfw && /usr/local/bin/cmake -P /home/ubuntu/CMM/a3-yuliangzhong/build/ext/ext/glfw/cmake_uninstall.cmake
+	cd /home/ubuntu/test/Boids-Simulator/build/ext/ext/glfw && /usr/local/bin/cmake -P /home/ubuntu/test/Boids-Simulator/build/ext/ext/glfw/cmake_uninstall.cmake
 
 uninstall: ext/ext/glfw/CMakeFiles/uninstall
 uninstall: ext/ext/glfw/CMakeFiles/uninstall.dir/build.make
@@ -86,10 +86,10 @@ ext/ext/glfw/CMakeFiles/uninstall.dir/build: uninstall
 .PHONY : ext/ext/glfw/CMakeFiles/uninstall.dir/build
 
 ext/ext/glfw/CMakeFiles/uninstall.dir/clean:
-	cd /home/ubuntu/CMM/a3-yuliangzhong/build/ext/ext/glfw && $(CMAKE_COMMAND) -P CMakeFiles/uninstall.dir/cmake_clean.cmake
+	cd /home/ubuntu/test/Boids-Simulator/build/ext/ext/glfw && $(CMAKE_COMMAND) -P CMakeFiles/uninstall.dir/cmake_clean.cmake
 .PHONY : ext/ext/glfw/CMakeFiles/uninstall.dir/clean
 
 ext/ext/glfw/CMakeFiles/uninstall.dir/depend:
-	cd /home/ubuntu/CMM/a3-yuliangzhong/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ubuntu/CMM/a3-yuliangzhong /home/ubuntu/CMM/a3-yuliangzhong/build/_deps/glfw-src /home/ubuntu/CMM/a3-yuliangzhong/build /home/ubuntu/CMM/a3-yuliangzhong/build/ext/ext/glfw /home/ubuntu/CMM/a3-yuliangzhong/build/ext/ext/glfw/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ubuntu/test/Boids-Simulator/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ubuntu/test/Boids-Simulator /home/ubuntu/test/Boids-Simulator/build/_deps/glfw-src /home/ubuntu/test/Boids-Simulator/build /home/ubuntu/test/Boids-Simulator/build/ext/ext/glfw /home/ubuntu/test/Boids-Simulator/build/ext/ext/glfw/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : ext/ext/glfw/CMakeFiles/uninstall.dir/depend
 

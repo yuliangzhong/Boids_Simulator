@@ -6,15 +6,15 @@
 
 #IncludeRegexTransform: 
 
-/home/ubuntu/CMM/a3-yuliangzhong/build/_deps/nanovg-src/src/fontstash.h
+/home/ubuntu/test/Boids-Simulator/build/_deps/nanovg-src/src/fontstash.h
 ft2build.h
 -
 math.h
 -
 stb_truetype.h
-/home/ubuntu/CMM/a3-yuliangzhong/build/_deps/nanovg-src/src/stb_truetype.h
+/home/ubuntu/test/Boids-Simulator/build/_deps/nanovg-src/src/stb_truetype.h
 
-/home/ubuntu/CMM/a3-yuliangzhong/build/_deps/nanovg-src/src/nanovg.c
+/home/ubuntu/test/Boids-Simulator/build/_deps/nanovg-src/src/nanovg.c
 stdlib.h
 -
 stdio.h
@@ -24,17 +24,17 @@ math.h
 memory.h
 -
 nanovg.h
-/home/ubuntu/CMM/a3-yuliangzhong/build/_deps/nanovg-src/src/nanovg.h
+/home/ubuntu/test/Boids-Simulator/build/_deps/nanovg-src/src/nanovg.h
 fontstash.h
-/home/ubuntu/CMM/a3-yuliangzhong/build/_deps/nanovg-src/src/fontstash.h
+/home/ubuntu/test/Boids-Simulator/build/_deps/nanovg-src/src/fontstash.h
 stb_image.h
-/home/ubuntu/CMM/a3-yuliangzhong/build/_deps/nanovg-src/src/stb_image.h
+/home/ubuntu/test/Boids-Simulator/build/_deps/nanovg-src/src/stb_image.h
 
-/home/ubuntu/CMM/a3-yuliangzhong/build/_deps/nanovg-src/src/nanovg.h
+/home/ubuntu/test/Boids-Simulator/build/_deps/nanovg-src/src/nanovg.h
 
-/home/ubuntu/CMM/a3-yuliangzhong/build/_deps/nanovg-src/src/stb_image.h
+/home/ubuntu/test/Boids-Simulator/build/_deps/nanovg-src/src/stb_image.h
 stb_image.h
-/home/ubuntu/CMM/a3-yuliangzhong/build/_deps/nanovg-src/src/stb_image.h
+/home/ubuntu/test/Boids-Simulator/build/_deps/nanovg-src/src/stb_image.h
 stdio.h
 -
 stdarg.h
@@ -60,13 +60,13 @@ intrin.h
 arm_neon.h
 -
 
-/home/ubuntu/CMM/a3-yuliangzhong/build/_deps/nanovg-src/src/stb_truetype.h
+/home/ubuntu/test/Boids-Simulator/build/_deps/nanovg-src/src/stb_truetype.h
 stb_truetype.h
-/home/ubuntu/CMM/a3-yuliangzhong/build/_deps/nanovg-src/src/stb_truetype.h
+/home/ubuntu/test/Boids-Simulator/build/_deps/nanovg-src/src/stb_truetype.h
 stdio.h
 -
 stb_truetype.h
-/home/ubuntu/CMM/a3-yuliangzhong/build/_deps/nanovg-src/src/stb_truetype.h
+/home/ubuntu/test/Boids-Simulator/build/_deps/nanovg-src/src/stb_truetype.h
 math.h
 -
 math.h

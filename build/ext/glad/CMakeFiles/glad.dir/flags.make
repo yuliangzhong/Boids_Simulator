@@ -4,7 +4,7 @@
 # compile C with /usr/bin/cc
 C_DEFINES = 
 
-C_INCLUDES = -I/home/ubuntu/CMM/a3-yuliangzhong/ext/glad/include
+C_INCLUDES = -I/home/ubuntu/test/Boids-Simulator/ext/glad/include
 
 C_FLAGS = -O3 -DNDEBUG
 

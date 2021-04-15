@@ -12,8 +12,8 @@ project(imgui-populate NONE)
 include(ExternalProject)
 ExternalProject_Add(imgui-populate
                      "UPDATE_DISCONNECTED" "False" "URL" "https://github.com/ocornut/imgui/archive/v1.81.zip" "URL_HASH" "MD5=78af0cf170fb3f2a431eb39cac7f55b8"
-                    SOURCE_DIR          "/home/ubuntu/CMM/a3-yuliangzhong/build/_deps/imgui-src"
-                    BINARY_DIR          "/home/ubuntu/CMM/a3-yuliangzhong/build/_deps/imgui-build"
+                    SOURCE_DIR          "/home/ubuntu/test/Boids-Simulator/build/_deps/imgui-src"
+                    BINARY_DIR          "/home/ubuntu/test/Boids-Simulator/build/_deps/imgui-build"
                     CONFIGURE_COMMAND   ""
                     BUILD_COMMAND       ""
                     INSTALL_COMMAND     ""

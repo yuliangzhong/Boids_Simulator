@@ -10,8 +10,10 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.18.6/CMakeSystem.cmake"
   "CMakeLists.txt"
   "nanovg-populate-prefix/tmp/nanovg-populate-cfgcmd.txt.in"
+  "/usr/local/share/cmake-3.18/Modules/CMakeDetermineSystem.cmake"
   "/usr/local/share/cmake-3.18/Modules/CMakeGenericSystem.cmake"
   "/usr/local/share/cmake-3.18/Modules/CMakeInitializeConfigs.cmake"
+  "/usr/local/share/cmake-3.18/Modules/CMakeSystem.cmake.in"
   "/usr/local/share/cmake-3.18/Modules/CMakeSystemSpecificInformation.cmake"
   "/usr/local/share/cmake-3.18/Modules/CMakeSystemSpecificInitialize.cmake"
   "/usr/local/share/cmake-3.18/Modules/ExternalProject-gitupdate.cmake.in"
@@ -32,6 +34,7 @@ set(CMAKE_MAKEFILE_OUTPUTS
 
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
+  "CMakeFiles/3.18.6/CMakeSystem.cmake"
   "nanovg-populate-prefix/src/nanovg-populate-stamp/nanovg-populate-gitinfo.txt"
   "nanovg-populate-prefix/tmp/nanovg-populate-gitupdate.cmake"
   "nanovg-populate-prefix/tmp/nanovg-populate-cfgcmd.txt"

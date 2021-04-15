@@ -1,4 +1,4 @@
-# Install script for directory: /home/ubuntu/CMM/a3-yuliangzhong/src
+# Install script for directory: /home/ubuntu/test/Boids-Simulator/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,9 +44,9 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/ubuntu/CMM/a3-yuliangzhong/build/src/boids/cmake_install.cmake")
-  include("/home/ubuntu/CMM/a3-yuliangzhong/build/src/guiLib/cmake_install.cmake")
-  include("/home/ubuntu/CMM/a3-yuliangzhong/build/src/app/cmake_install.cmake")
+  include("/home/ubuntu/test/Boids-Simulator/build/src/boids/cmake_install.cmake")
+  include("/home/ubuntu/test/Boids-Simulator/build/src/guiLib/cmake_install.cmake")
+  include("/home/ubuntu/test/Boids-Simulator/build/src/app/cmake_install.cmake")
 
 endif()
 

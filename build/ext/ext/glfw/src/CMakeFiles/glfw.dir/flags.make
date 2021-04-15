@@ -4,7 +4,7 @@
 # compile C with /usr/bin/cc
 C_DEFINES = -D_GLFW_USE_CONFIG_H
 
-C_INCLUDES = -I/home/ubuntu/CMM/a3-yuliangzhong/build/_deps/glfw-src/include -I/home/ubuntu/CMM/a3-yuliangzhong/build/_deps/glfw-src/src -I/home/ubuntu/CMM/a3-yuliangzhong/build/ext/ext/glfw/src
+C_INCLUDES = -I/home/ubuntu/test/Boids-Simulator/build/_deps/glfw-src/include -I/home/ubuntu/test/Boids-Simulator/build/_deps/glfw-src/src -I/home/ubuntu/test/Boids-Simulator/build/ext/ext/glfw/src
 
 C_FLAGS = -O3 -DNDEBUG -fPIC -Wall -std=gnu99
 

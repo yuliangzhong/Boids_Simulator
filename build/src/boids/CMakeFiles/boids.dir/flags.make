@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/ubuntu/CMM/a3-yuliangzhong/src/boids -I/home/ubuntu/CMM/a3-yuliangzhong/build/_deps/eigen-src
+CXX_INCLUDES = -I/home/ubuntu/test/Boids-Simulator/src/boids -I/home/ubuntu/test/Boids-Simulator/build/_deps/eigen-src
 
 CXX_FLAGS = -O3 -DNDEBUG -std=gnu++1z
 

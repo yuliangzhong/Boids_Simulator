@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/ubuntu/CMM/a3-yuliangzhong/src/boids/boids.cpp" "/home/ubuntu/CMM/a3-yuliangzhong/build/src/boids/CMakeFiles/boids.dir/boids.cpp.o"
+  "/home/ubuntu/test/Boids-Simulator/src/boids/boids.cpp" "/home/ubuntu/test/Boids-Simulator/build/src/boids/CMakeFiles/boids.dir/boids.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

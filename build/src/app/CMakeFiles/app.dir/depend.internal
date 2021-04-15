@@ -5,8 +5,8 @@ src/app/CMakeFiles/app.dir/main.cpp.o
  ../ext/glad/include/KHR/khrplatform.h
  ../ext/glad/include/glad/glad.h
  ../src/guiLib/application.h
- /home/ubuntu/CMM/a3-yuliangzhong/src/app/main.cpp
- /home/ubuntu/CMM/a3-yuliangzhong/src/boids/boids.h
+ /home/ubuntu/test/Boids-Simulator/src/app/main.cpp
+ /home/ubuntu/test/Boids-Simulator/src/boids/boids.h
  _deps/eigen-src/Eigen/Cholesky
  _deps/eigen-src/Eigen/Core
  _deps/eigen-src/Eigen/Householder

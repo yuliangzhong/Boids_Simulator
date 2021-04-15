@@ -1,4 +1,4 @@
-# Install script for directory: /home/ubuntu/CMM/a3-yuliangzhong/build/_deps/json-subbuild
+# Install script for directory: /home/ubuntu/test/Boids-Simulator/build/_deps/json-subbuild
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/ubuntu/CMM/a3-yuliangzhong/build/_deps/json-subbuild/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/ubuntu/test/Boids-Simulator/build/_deps/json-subbuild/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

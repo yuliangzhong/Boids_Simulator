@@ -12,8 +12,8 @@ project(glfw-populate NONE)
 include(ExternalProject)
 ExternalProject_Add(glfw-populate
                      "UPDATE_DISCONNECTED" "False" "URL" "https://github.com/glfw/glfw/archive/3.3.2.zip" "URL_HASH" "MD5=69d0aa90a9278c0dd8be975d1ae4aaf2"
-                    SOURCE_DIR          "/home/ubuntu/CMM/a3-yuliangzhong/build/_deps/glfw-src"
-                    BINARY_DIR          "/home/ubuntu/CMM/a3-yuliangzhong/build/_deps/glfw-build"
+                    SOURCE_DIR          "/home/ubuntu/test/Boids-Simulator/build/_deps/glfw-src"
+                    BINARY_DIR          "/home/ubuntu/test/Boids-Simulator/build/_deps/glfw-build"
                     CONFIGURE_COMMAND   ""
                     BUILD_COMMAND       ""
                     INSTALL_COMMAND     ""

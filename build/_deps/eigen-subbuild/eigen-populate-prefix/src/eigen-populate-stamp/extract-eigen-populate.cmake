@@ -1,7 +1,7 @@
 # Make file names absolute:
 #
-get_filename_component(filename "/home/ubuntu/CMM/a3-yuliangzhong/build/_deps/eigen-subbuild/eigen-populate-prefix/src/eigen-3.3.7.zip" ABSOLUTE)
-get_filename_component(directory "/home/ubuntu/CMM/a3-yuliangzhong/build/_deps/eigen-src" ABSOLUTE)
+get_filename_component(filename "/home/ubuntu/test/Boids-Simulator/build/_deps/eigen-subbuild/eigen-populate-prefix/src/eigen-3.3.7.zip" ABSOLUTE)
+get_filename_component(directory "/home/ubuntu/test/Boids-Simulator/build/_deps/eigen-src" ABSOLUTE)
 
 message(STATUS "extracting...
      src='${filename}'

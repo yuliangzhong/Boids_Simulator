@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/ubuntu/CMM/a3-yuliangzhong/build/_deps/imgui-src
+CXX_INCLUDES = -I/home/ubuntu/test/Boids-Simulator/build/_deps/imgui-src
 
 CXX_FLAGS = -O3 -DNDEBUG -std=gnu++1z
 

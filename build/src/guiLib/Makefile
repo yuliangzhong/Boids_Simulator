@@ -67,10 +67,10 @@ RM = /usr/local/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ubuntu/CMM/a3-yuliangzhong
+CMAKE_SOURCE_DIR = /home/ubuntu/test/Boids-Simulator
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ubuntu/CMM/a3-yuliangzhong/build
+CMAKE_BINARY_DIR = /home/ubuntu/test/Boids-Simulator/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -156,14 +156,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/ubuntu/CMM/a3-yuliangzhong/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/CMM/a3-yuliangzhong/build/CMakeFiles /home/ubuntu/CMM/a3-yuliangzhong/build/src/guiLib//CMakeFiles/progress.marks
-	cd /home/ubuntu/CMM/a3-yuliangzhong/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/guiLib/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/CMM/a3-yuliangzhong/build/CMakeFiles 0
+	cd /home/ubuntu/test/Boids-Simulator/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/test/Boids-Simulator/build/CMakeFiles /home/ubuntu/test/Boids-Simulator/build/src/guiLib//CMakeFiles/progress.marks
+	cd /home/ubuntu/test/Boids-Simulator/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/guiLib/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/test/Boids-Simulator/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/ubuntu/CMM/a3-yuliangzhong/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/guiLib/clean
+	cd /home/ubuntu/test/Boids-Simulator/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/guiLib/clean
 .PHONY : clean
 
 # The main clean target
@@ -173,22 +173,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/ubuntu/CMM/a3-yuliangzhong/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/guiLib/preinstall
+	cd /home/ubuntu/test/Boids-Simulator/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/guiLib/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/ubuntu/CMM/a3-yuliangzhong/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/guiLib/preinstall
+	cd /home/ubuntu/test/Boids-Simulator/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/guiLib/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/ubuntu/CMM/a3-yuliangzhong/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/ubuntu/test/Boids-Simulator/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 src/guiLib/CMakeFiles/guiLib.dir/rule:
-	cd /home/ubuntu/CMM/a3-yuliangzhong/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/guiLib/CMakeFiles/guiLib.dir/rule
+	cd /home/ubuntu/test/Boids-Simulator/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/guiLib/CMakeFiles/guiLib.dir/rule
 .PHONY : src/guiLib/CMakeFiles/guiLib.dir/rule
 
 # Convenience name for target.
@@ -198,7 +198,7 @@ guiLib: src/guiLib/CMakeFiles/guiLib.dir/rule
 
 # fast build rule for target.
 guiLib/fast:
-	cd /home/ubuntu/CMM/a3-yuliangzhong/build && $(MAKE) $(MAKESILENT) -f src/guiLib/CMakeFiles/guiLib.dir/build.make src/guiLib/CMakeFiles/guiLib.dir/build
+	cd /home/ubuntu/test/Boids-Simulator/build && $(MAKE) $(MAKESILENT) -f src/guiLib/CMakeFiles/guiLib.dir/build.make src/guiLib/CMakeFiles/guiLib.dir/build
 .PHONY : guiLib/fast
 
 application.o: application.cpp.o
@@ -207,7 +207,7 @@ application.o: application.cpp.o
 
 # target to build an object file
 application.cpp.o:
-	cd /home/ubuntu/CMM/a3-yuliangzhong/build && $(MAKE) $(MAKESILENT) -f src/guiLib/CMakeFiles/guiLib.dir/build.make src/guiLib/CMakeFiles/guiLib.dir/application.cpp.o
+	cd /home/ubuntu/test/Boids-Simulator/build && $(MAKE) $(MAKESILENT) -f src/guiLib/CMakeFiles/guiLib.dir/build.make src/guiLib/CMakeFiles/guiLib.dir/application.cpp.o
 .PHONY : application.cpp.o
 
 application.i: application.cpp.i
@@ -216,7 +216,7 @@ application.i: application.cpp.i
 
 # target to preprocess a source file
 application.cpp.i:
-	cd /home/ubuntu/CMM/a3-yuliangzhong/build && $(MAKE) $(MAKESILENT) -f src/guiLib/CMakeFiles/guiLib.dir/build.make src/guiLib/CMakeFiles/guiLib.dir/application.cpp.i
+	cd /home/ubuntu/test/Boids-Simulator/build && $(MAKE) $(MAKESILENT) -f src/guiLib/CMakeFiles/guiLib.dir/build.make src/guiLib/CMakeFiles/guiLib.dir/application.cpp.i
 .PHONY : application.cpp.i
 
 application.s: application.cpp.s
@@ -225,7 +225,7 @@ application.s: application.cpp.s
 
 # target to generate assembly for a file
 application.cpp.s:
-	cd /home/ubuntu/CMM/a3-yuliangzhong/build && $(MAKE) $(MAKESILENT) -f src/guiLib/CMakeFiles/guiLib.dir/build.make src/guiLib/CMakeFiles/guiLib.dir/application.cpp.s
+	cd /home/ubuntu/test/Boids-Simulator/build && $(MAKE) $(MAKESILENT) -f src/guiLib/CMakeFiles/guiLib.dir/build.make src/guiLib/CMakeFiles/guiLib.dir/application.cpp.s
 .PHONY : application.cpp.s
 
 imgui_impl_glfw.o: imgui_impl_glfw.cpp.o
@@ -234,7 +234,7 @@ imgui_impl_glfw.o: imgui_impl_glfw.cpp.o
 
 # target to build an object file
 imgui_impl_glfw.cpp.o:
-	cd /home/ubuntu/CMM/a3-yuliangzhong/build && $(MAKE) $(MAKESILENT) -f src/guiLib/CMakeFiles/guiLib.dir/build.make src/guiLib/CMakeFiles/guiLib.dir/imgui_impl_glfw.cpp.o
+	cd /home/ubuntu/test/Boids-Simulator/build && $(MAKE) $(MAKESILENT) -f src/guiLib/CMakeFiles/guiLib.dir/build.make src/guiLib/CMakeFiles/guiLib.dir/imgui_impl_glfw.cpp.o
 .PHONY : imgui_impl_glfw.cpp.o
 
 imgui_impl_glfw.i: imgui_impl_glfw.cpp.i
@@ -243,7 +243,7 @@ imgui_impl_glfw.i: imgui_impl_glfw.cpp.i
 
 # target to preprocess a source file
 imgui_impl_glfw.cpp.i:
-	cd /home/ubuntu/CMM/a3-yuliangzhong/build && $(MAKE) $(MAKESILENT) -f src/guiLib/CMakeFiles/guiLib.dir/build.make src/guiLib/CMakeFiles/guiLib.dir/imgui_impl_glfw.cpp.i
+	cd /home/ubuntu/test/Boids-Simulator/build && $(MAKE) $(MAKESILENT) -f src/guiLib/CMakeFiles/guiLib.dir/build.make src/guiLib/CMakeFiles/guiLib.dir/imgui_impl_glfw.cpp.i
 .PHONY : imgui_impl_glfw.cpp.i
 
 imgui_impl_glfw.s: imgui_impl_glfw.cpp.s
@@ -252,7 +252,7 @@ imgui_impl_glfw.s: imgui_impl_glfw.cpp.s
 
 # target to generate assembly for a file
 imgui_impl_glfw.cpp.s:
-	cd /home/ubuntu/CMM/a3-yuliangzhong/build && $(MAKE) $(MAKESILENT) -f src/guiLib/CMakeFiles/guiLib.dir/build.make src/guiLib/CMakeFiles/guiLib.dir/imgui_impl_glfw.cpp.s
+	cd /home/ubuntu/test/Boids-Simulator/build && $(MAKE) $(MAKESILENT) -f src/guiLib/CMakeFiles/guiLib.dir/build.make src/guiLib/CMakeFiles/guiLib.dir/imgui_impl_glfw.cpp.s
 .PHONY : imgui_impl_glfw.cpp.s
 
 imgui_impl_opengl3.o: imgui_impl_opengl3.cpp.o
@@ -261,7 +261,7 @@ imgui_impl_opengl3.o: imgui_impl_opengl3.cpp.o
 
 # target to build an object file
 imgui_impl_opengl3.cpp.o:
-	cd /home/ubuntu/CMM/a3-yuliangzhong/build && $(MAKE) $(MAKESILENT) -f src/guiLib/CMakeFiles/guiLib.dir/build.make src/guiLib/CMakeFiles/guiLib.dir/imgui_impl_opengl3.cpp.o
+	cd /home/ubuntu/test/Boids-Simulator/build && $(MAKE) $(MAKESILENT) -f src/guiLib/CMakeFiles/guiLib.dir/build.make src/guiLib/CMakeFiles/guiLib.dir/imgui_impl_opengl3.cpp.o
 .PHONY : imgui_impl_opengl3.cpp.o
 
 imgui_impl_opengl3.i: imgui_impl_opengl3.cpp.i
@@ -270,7 +270,7 @@ imgui_impl_opengl3.i: imgui_impl_opengl3.cpp.i
 
 # target to preprocess a source file
 imgui_impl_opengl3.cpp.i:
-	cd /home/ubuntu/CMM/a3-yuliangzhong/build && $(MAKE) $(MAKESILENT) -f src/guiLib/CMakeFiles/guiLib.dir/build.make src/guiLib/CMakeFiles/guiLib.dir/imgui_impl_opengl3.cpp.i
+	cd /home/ubuntu/test/Boids-Simulator/build && $(MAKE) $(MAKESILENT) -f src/guiLib/CMakeFiles/guiLib.dir/build.make src/guiLib/CMakeFiles/guiLib.dir/imgui_impl_opengl3.cpp.i
 .PHONY : imgui_impl_opengl3.cpp.i
 
 imgui_impl_opengl3.s: imgui_impl_opengl3.cpp.s
@@ -279,7 +279,7 @@ imgui_impl_opengl3.s: imgui_impl_opengl3.cpp.s
 
 # target to generate assembly for a file
 imgui_impl_opengl3.cpp.s:
-	cd /home/ubuntu/CMM/a3-yuliangzhong/build && $(MAKE) $(MAKESILENT) -f src/guiLib/CMakeFiles/guiLib.dir/build.make src/guiLib/CMakeFiles/guiLib.dir/imgui_impl_opengl3.cpp.s
+	cd /home/ubuntu/test/Boids-Simulator/build && $(MAKE) $(MAKESILENT) -f src/guiLib/CMakeFiles/guiLib.dir/build.make src/guiLib/CMakeFiles/guiLib.dir/imgui_impl_opengl3.cpp.s
 .PHONY : imgui_impl_opengl3.cpp.s
 
 shader.o: shader.cpp.o
@@ -288,7 +288,7 @@ shader.o: shader.cpp.o
 
 # target to build an object file
 shader.cpp.o:
-	cd /home/ubuntu/CMM/a3-yuliangzhong/build && $(MAKE) $(MAKESILENT) -f src/guiLib/CMakeFiles/guiLib.dir/build.make src/guiLib/CMakeFiles/guiLib.dir/shader.cpp.o
+	cd /home/ubuntu/test/Boids-Simulator/build && $(MAKE) $(MAKESILENT) -f src/guiLib/CMakeFiles/guiLib.dir/build.make src/guiLib/CMakeFiles/guiLib.dir/shader.cpp.o
 .PHONY : shader.cpp.o
 
 shader.i: shader.cpp.i
@@ -297,7 +297,7 @@ shader.i: shader.cpp.i
 
 # target to preprocess a source file
 shader.cpp.i:
-	cd /home/ubuntu/CMM/a3-yuliangzhong/build && $(MAKE) $(MAKESILENT) -f src/guiLib/CMakeFiles/guiLib.dir/build.make src/guiLib/CMakeFiles/guiLib.dir/shader.cpp.i
+	cd /home/ubuntu/test/Boids-Simulator/build && $(MAKE) $(MAKESILENT) -f src/guiLib/CMakeFiles/guiLib.dir/build.make src/guiLib/CMakeFiles/guiLib.dir/shader.cpp.i
 .PHONY : shader.cpp.i
 
 shader.s: shader.cpp.s
@@ -306,7 +306,7 @@ shader.s: shader.cpp.s
 
 # target to generate assembly for a file
 shader.cpp.s:
-	cd /home/ubuntu/CMM/a3-yuliangzhong/build && $(MAKE) $(MAKESILENT) -f src/guiLib/CMakeFiles/guiLib.dir/build.make src/guiLib/CMakeFiles/guiLib.dir/shader.cpp.s
+	cd /home/ubuntu/test/Boids-Simulator/build && $(MAKE) $(MAKESILENT) -f src/guiLib/CMakeFiles/guiLib.dir/build.make src/guiLib/CMakeFiles/guiLib.dir/shader.cpp.s
 .PHONY : shader.cpp.s
 
 # Help Target
@@ -346,6 +346,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/ubuntu/CMM/a3-yuliangzhong/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/ubuntu/test/Boids-Simulator/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

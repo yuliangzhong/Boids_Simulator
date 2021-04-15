@@ -67,10 +67,10 @@ RM = /usr/local/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ubuntu/CMM/a3-yuliangzhong
+CMAKE_SOURCE_DIR = /home/ubuntu/test/Boids-Simulator
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ubuntu/CMM/a3-yuliangzhong/build
+CMAKE_BINARY_DIR = /home/ubuntu/test/Boids-Simulator/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -156,14 +156,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/ubuntu/CMM/a3-yuliangzhong/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/CMM/a3-yuliangzhong/build/CMakeFiles /home/ubuntu/CMM/a3-yuliangzhong/build/src/boids//CMakeFiles/progress.marks
-	cd /home/ubuntu/CMM/a3-yuliangzhong/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/boids/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/CMM/a3-yuliangzhong/build/CMakeFiles 0
+	cd /home/ubuntu/test/Boids-Simulator/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/test/Boids-Simulator/build/CMakeFiles /home/ubuntu/test/Boids-Simulator/build/src/boids//CMakeFiles/progress.marks
+	cd /home/ubuntu/test/Boids-Simulator/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/boids/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/test/Boids-Simulator/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/ubuntu/CMM/a3-yuliangzhong/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/boids/clean
+	cd /home/ubuntu/test/Boids-Simulator/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/boids/clean
 .PHONY : clean
 
 # The main clean target
@@ -173,22 +173,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/ubuntu/CMM/a3-yuliangzhong/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/boids/preinstall
+	cd /home/ubuntu/test/Boids-Simulator/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/boids/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/ubuntu/CMM/a3-yuliangzhong/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/boids/preinstall
+	cd /home/ubuntu/test/Boids-Simulator/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/boids/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/ubuntu/CMM/a3-yuliangzhong/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/ubuntu/test/Boids-Simulator/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 src/boids/CMakeFiles/boids.dir/rule:
-	cd /home/ubuntu/CMM/a3-yuliangzhong/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/boids/CMakeFiles/boids.dir/rule
+	cd /home/ubuntu/test/Boids-Simulator/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/boids/CMakeFiles/boids.dir/rule
 .PHONY : src/boids/CMakeFiles/boids.dir/rule
 
 # Convenience name for target.
@@ -198,7 +198,7 @@ boids: src/boids/CMakeFiles/boids.dir/rule
 
 # fast build rule for target.
 boids/fast:
-	cd /home/ubuntu/CMM/a3-yuliangzhong/build && $(MAKE) $(MAKESILENT) -f src/boids/CMakeFiles/boids.dir/build.make src/boids/CMakeFiles/boids.dir/build
+	cd /home/ubuntu/test/Boids-Simulator/build && $(MAKE) $(MAKESILENT) -f src/boids/CMakeFiles/boids.dir/build.make src/boids/CMakeFiles/boids.dir/build
 .PHONY : boids/fast
 
 boids.o: boids.cpp.o
@@ -207,7 +207,7 @@ boids.o: boids.cpp.o
 
 # target to build an object file
 boids.cpp.o:
-	cd /home/ubuntu/CMM/a3-yuliangzhong/build && $(MAKE) $(MAKESILENT) -f src/boids/CMakeFiles/boids.dir/build.make src/boids/CMakeFiles/boids.dir/boids.cpp.o
+	cd /home/ubuntu/test/Boids-Simulator/build && $(MAKE) $(MAKESILENT) -f src/boids/CMakeFiles/boids.dir/build.make src/boids/CMakeFiles/boids.dir/boids.cpp.o
 .PHONY : boids.cpp.o
 
 boids.i: boids.cpp.i
@@ -216,7 +216,7 @@ boids.i: boids.cpp.i
 
 # target to preprocess a source file
 boids.cpp.i:
-	cd /home/ubuntu/CMM/a3-yuliangzhong/build && $(MAKE) $(MAKESILENT) -f src/boids/CMakeFiles/boids.dir/build.make src/boids/CMakeFiles/boids.dir/boids.cpp.i
+	cd /home/ubuntu/test/Boids-Simulator/build && $(MAKE) $(MAKESILENT) -f src/boids/CMakeFiles/boids.dir/build.make src/boids/CMakeFiles/boids.dir/boids.cpp.i
 .PHONY : boids.cpp.i
 
 boids.s: boids.cpp.s
@@ -225,7 +225,7 @@ boids.s: boids.cpp.s
 
 # target to generate assembly for a file
 boids.cpp.s:
-	cd /home/ubuntu/CMM/a3-yuliangzhong/build && $(MAKE) $(MAKESILENT) -f src/boids/CMakeFiles/boids.dir/build.make src/boids/CMakeFiles/boids.dir/boids.cpp.s
+	cd /home/ubuntu/test/Boids-Simulator/build && $(MAKE) $(MAKESILENT) -f src/boids/CMakeFiles/boids.dir/build.make src/boids/CMakeFiles/boids.dir/boids.cpp.s
 .PHONY : boids.cpp.s
 
 # Help Target
@@ -256,6 +256,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/ubuntu/CMM/a3-yuliangzhong/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/ubuntu/test/Boids-Simulator/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

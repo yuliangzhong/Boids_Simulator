@@ -12,8 +12,8 @@ project(nanovg-populate NONE)
 include(ExternalProject)
 ExternalProject_Add(nanovg-populate
                      "UPDATE_DISCONNECTED" "False" "GIT_REPOSITORY" "https://github.com/memononen/nanovg" "GIT_TAG" "077b65e0cf3e22ee4f588783e319b19b0a608065"
-                    SOURCE_DIR          "/home/ubuntu/CMM/a3-yuliangzhong/build/_deps/nanovg-src"
-                    BINARY_DIR          "/home/ubuntu/CMM/a3-yuliangzhong/build/_deps/nanovg-build"
+                    SOURCE_DIR          "/home/ubuntu/test/Boids-Simulator/build/_deps/nanovg-src"
+                    BINARY_DIR          "/home/ubuntu/test/Boids-Simulator/build/_deps/nanovg-build"
                     CONFIGURE_COMMAND   ""
                     BUILD_COMMAND       ""
                     INSTALL_COMMAND     ""
