@@ -2,13 +2,13 @@
 
 ## Introduction
 
-In this assignment, I implement a particle system for simulating the flocking behavior of birds based on* Boids [Reynolds(1987)]*. 
+In this assignment, I implement a particle system for simulating the flocking behavior of birds based on *Boids [Reynolds(1987)]*. 
 
-In the case *FreeFall* and *Circular Motion*, you can test the **Time Integration Algorithms** including **Basic Time Integration, Symplectic Euler ** and ** Explicit Midpoint**. In the case *Cohesion, Alignment, Separation *and *Collision Aviodance*, you can test the Flocking behavior of boids. In the case *Leading* and *Collaborative & Adversarial*, you can test how the boids follow the leader and how two boids fight with each other in a bounded habitat, which might be the most interesting part of this assignment.
+In the case *FreeFall* and *Circular Motion*, you can test the **Time Integration Algorithms** including **Basic Time Integration, Symplectic Euler** and **Explicit Midpoint**. In the case *Cohesion, Alignment, Separation* and *Collision Aviodance*, you can test the Flocking behavior of boids. In the case *Leading* and *Collaborative & Adversarial*, you can test how the boids follow the leader and how two boids fight with each other in a bounded habitat, which might be the most interesting part of this assignment.
 
 You can see the demos below.
 
-This assignment is accomplished by **C++**, heavily based on ** Eigen**. The main implementation is in the file **boids.h** and **main.cpp**.
+This assignment is accomplished by **C++**, heavily based on **Eigen**. The main implementation is in the file **boids.h** and **main.cpp**.
 
 TAs provide a simple starter code skeleton including basic GUI functionality and particle drawing, but I changed them for my convenience.
 
@@ -73,11 +73,9 @@ By quick attack, the red boids seize more habitat. By retreat, the red boids con
 ## How to get started
 
 1. git clone the source code
-2. in "build" file, cmake with release mode  ```~$ cmake -DCMAKE_BUILD_TYPE=Release ..```
-3. recompile it  ``` ~$ make ```
-4. ```~$ cd build/src/app```
-5. open GUI ```~$ ./app```
-6. Enjoy it. 
+2. ```~$ cd build/src/app```
+3. open GUI ```~$ ./app```
+4. Enjoy it. 
 
 Tips: press *space* for pause, and press *R* for re-init. It automatically re-init if you change the current case.
 
