@@ -16,7 +16,8 @@ TAs provide a simple starter code skeleton including basic GUI functionality and
 * FreeFall
 Boids are initiated at random positions and have zero velocity. Then they fall because of gravity.
 
-<video src="https://user-images.githubusercontent.com/39910677/114866689-2861a100-9df4-11eb-8a6e-e4b92f029806.mp4" width="320" height="200" controls preload></video>
+[![Alternate Text]({image-url})]({https://user-images.githubusercontent.com/39910677/114866689-2861a100-9df4-11eb-8a6e-e4b92f029806.mp4
+} "Link Title")
 
 https://user-images.githubusercontent.com/39910677/114866689-2861a100-9df4-11eb-8a6e-e4b92f029806.mp4
 
