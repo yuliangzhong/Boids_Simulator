@@ -16,24 +16,24 @@ TAs provide a simple starter code skeleton including basic GUI functionality and
 * FreeFall
 Boids are initiated at random positions and have zero velocity. Then they fall because of gravity.
 
-![FreeFall](https://user-images.githubusercontent.com/39910677/114866689-2861a100-9df4-11eb-8a6e-e4b92f029806.mp4)
+https://user-images.githubusercontent.com/39910677/114866689-2861a100-9df4-11eb-8a6e-e4b92f029806.mp4
 
 * Circular Motion
 Boids are rotating w.r.t. the origin. In this case, you can test the difference between three time integration algorithms. (By change *updateMode* in *boids.h*.)
 
 **All three integration schemes perform well when stepsize h is small (h=0.0005), but basic time integration and explicit midpoint diverge when the stepsize is big (h = 1). Midpoint diverges more slowly than basic integration. But symplectic euler method is still stable.**
 
-![Circular Motion]()
+https://user-images.githubusercontent.com/39910677/114868723-868f8380-9df6-11eb-92e5-d1868be5f33e.mp4
 
 * Cohesion
 Birds have the tendency to stay close to their neighbors. (Position Control)
 
-![Cohesion]()
+https://user-images.githubusercontent.com/39910677/114868749-8db69180-9df6-11eb-8758-fa04779c7e81.mp4
 
 * Alignment
 In addition to moving toward the average position of neighboring birds, each bird now also wants to match the average direction of the others. (Velocity Control)
 
-![Alignment]()
+https://user-images.githubusercontent.com/39910677/114868801-9ad38080-9df6-11eb-987a-51d4002bd4d5.mp4
 
 * Separation
 When birds come too close to each other, they separate such as to avoid collisions. Add repulsive forces that avoid overcrowding.
@@ -43,12 +43,12 @@ https://user-images.githubusercontent.com/39910677/114867424-16ccc900-9df5-11eb-
 * Collision Avoidance
 Implement a collision avoidance strategy where birds should steer around a given circular obstacle.
 
-![Collision Avoidance]()
+https://user-images.githubusercontent.com/39910677/114868833-a32bbb80-9df6-11eb-9423-701700f347cc.mp4
 
 * Leading
 One blue bird is designated as the leader whose motion the remaining red birds should follow. 
 
-![Leading]()
+https://user-images.githubusercontent.com/39910677/114868861-ab83f680-9df6-11eb-9d2d-9371bff44842.mp4
 
 * Collaborative & Adversarial
 
@@ -61,7 +61,7 @@ One blue bird is designated as the leader whose motion the remaining red birds s
 * The habitat is bounded and the resource is limitted.
 * If one bird is surrounded by six birds from the same group, and the distance between them is smaller than 60% of the separation distance, the bird is dead of hunger. (Avoid Overcrowded)
 
-![CA]()
+https://user-images.githubusercontent.com/39910677/114868890-b3439b00-9df6-11eb-9e60-fd571a3dc3d4.mp4
 
 As you can see, the numbers of two boids have logistic growth. Same initial conditions and same breed/attack rule, the fate of the two boids is random.
 
@@ -69,20 +69,20 @@ But what if you apply control strategies to the red boids? Can they win the deat
  
  ***Strategy 1: Seize the origin, quick attack and quick retreat***
  
- ![Strategy 1]()
+https://user-images.githubusercontent.com/39910677/114869017-d1a99680-9df6-11eb-94bf-b5c926141057.mp4
 
 By quick attack, the red boids seize more habitat. By retreat, the red boids consolidate population superiority. Then they win the game.
 
  ***Strategy 2: Take advantage of local majority***
  
- ![Strategy 2]()
- 
+https://user-images.githubusercontent.com/39910677/114869033-d79f7780-9df6-11eb-9a34-a2dbaa0dfd08.mp4
+
 By Lanchester's N-square law of war, the red boid should attack the border of the blue bird group and take advantage of the local majority. In implementation, the red boids are chasing the rightest blue bird. The winning probability is around 80% ( win 16 times in 20 trials).
- 
-  ***Strategy 3: Warriors and breeders***
-  
-  ![Strategy 3]()
-  
+
+***Strategy 3: Warriors and breeders***
+
+Uploading S3.mp4…
+
 Half of the red birds are male. They are stronger and more aggressive. They are warriors and attack the enemy. Half of the red birds are female. They are breeders, following the boids, breeding, and supporting the war. For warriors, they  won't go too deep into the enemy's boids. The code implementation is adapted from the *Collision Avoidance*
   
 ## How to get started
