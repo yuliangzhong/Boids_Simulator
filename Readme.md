@@ -16,6 +16,8 @@ TAs provide a simple starter code skeleton including basic GUI functionality and
 * FreeFall
 Boids are initiated at random positions and have zero velocity. Then they fall because of gravity.
 
+<video src="https://user-images.githubusercontent.com/39910677/114866689-2861a100-9df4-11eb-8a6e-e4b92f029806.mp4" width="320" height="200" controls preload></video>
+
 https://user-images.githubusercontent.com/39910677/114866689-2861a100-9df4-11eb-8a6e-e4b92f029806.mp4
 
 * Circular Motion
@@ -81,7 +83,7 @@ By Lanchester's N-square law of war, the red boid should attack the border of th
 
 ***Strategy 3: Warriors and breeders***
 
-Uploading S3.mp4…
+https://user-images.githubusercontent.com/39910677/114869405-382eb480-9df7-11eb-8895-e2f504fbd0e7.mp4
 
 Half of the red birds are male. They are stronger and more aggressive. They are warriors and attack the enemy. Half of the red birds are female. They are breeders, following the boids, breeding, and supporting the war. For warriors, they  won't go too deep into the enemy's boids. The code implementation is adapted from the *Collision Avoidance*
   
