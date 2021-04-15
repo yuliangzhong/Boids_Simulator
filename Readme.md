@@ -16,7 +16,8 @@ TAs provide a simple starter code skeleton including basic GUI functionality and
 * FreeFall
 Boids are initiated at random positions and have zero velocity. Then they fall because of gravity.
 
-![FreeFall]() 
+https://user-images.githubusercontent.com/39910677/114866689-2861a100-9df4-11eb-8a6e-e4b92f029806.mp4
+
 
 * Circular Motion
 Boids are rotating w.r.t. the origin. In this case, you can test the difference between three time integration algorithms. (By change *updateMode* in *boids.h*.)
